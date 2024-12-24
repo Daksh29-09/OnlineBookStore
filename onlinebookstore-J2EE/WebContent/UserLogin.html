@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login - Book Store</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            font-style: oblique;
+        }
+
+        body {
+            background: url("Photo.jpg") no-repeat center center fixed; /* Replace 'Photo.jpg' with your image file */
+            background-size: cover; /* Ensures the image covers the entire background */
+            color: #333;
+        }
+
+        /* Header Section */
+        #topmid {
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(255, 111, 97, 0.9); /* Semi-transparent background */
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideInDown 1.5s ease-in-out; /* Animation for header */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 111, 97, 0.9); /* Semi-transparent navbar */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out; /* Animation for navbar */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 144, 119, 0.9);
+            transform: translateY(-2px);
+        }
+
+        /* Content Tabs */
+        .tab {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            margin: 20px auto;
+            width: 400px;
+            color: #333;
+            font-weight: normal;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .tab:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Typography Colors */
+        .brown {
+            color: #8D4F25;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        form input[type="text"],
+        form input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        form input[type="submit"] {
+            padding: 10px 15px;
+            background-color: rgba(255, 111, 97, 0.9);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: rgba(255, 144, 119, 0.9);
+            transform: translateY(-2px);
+        }
+
+        /* Animations */
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="topmid">
+        <h1>Welcome to Online Book Store</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">Login</a>
+        <a href="viewbook">Books Available</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <!-- User Login Section -->
+    <div class="tab brown">
+        <h2>USER LOGIN</h2>
+    </div>
+
+    <div class="tab">
+        <form action="userlog" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="LOGIN AS USER">
+        </form>
+    </div>
+
+</body>
+</html>

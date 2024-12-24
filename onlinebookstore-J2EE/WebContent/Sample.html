@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Book Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("Photo.jpg");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #topmid {
+            color: #FFFFFF;
+            text-align: center;
+            font-weight: bold;
+            font-style: oblique;
+            font-size: 38px;
+            background-color: rgba(255, 111, 97, 0.9);
+            padding: 20px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 111, 97, 0.9);
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 144, 119, 0.9);
+            transform: translateY(-2px);
+        }
+
+        .navbar-right {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        /* Content Tab */
+        .tab {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="topmid">
+        <h1>Welcome to Online Book Store</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">Login</a>
+        <a href="viewbook">Books Available</a>
+        <a href="index.html">Logout</a>
+        <div class="navbar-right" id="welcomeMessage"></div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="tab">
+        <h2>Welcome to the Book Store</h2>
+        <p>Browse and purchase your favorite books!</p>
+    </div>
+
+    <script>
+        // Set the welcome message dynamically
+        const username = ""; // Replace with actual username from server
+        document.getElementById("welcomeMessage").textContent = `Welcome, ${username}!`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Add Books</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: url("Photo.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        /* Header Section */
+        #topmid {
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(255, 111, 97, 0.9);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 111, 97, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 144, 119, 0.9);
+            transform: translateY(-2px);
+        }
+
+        /* Form Section */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-container label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #2A9D8F;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #21867a;
+            transform: translateY(-2px);
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #E63946;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #FF5A5F;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="topmid">
+        <h1>Welcome to Online Book Store</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="adminlog">Home</a>
+        <a href="index.html">Login</a>
+        <a href="viewbook">Books Available</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-container">
+        <h2>Add Books</h2>
+        <form action="addbook" method="post">
+            <label for="barcode">Book Code:</label>
+            <input type="text" id="barcode" name="barcode" required>
+            
+            <label for="name">Book Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="author">Book Author:</label>
+            <input type="text" id="author" name="author" required>
+            
+            <label for="price">Book Price:</label>
+            <input type="text" id="price" name="price" required>
+            
+            <label for="quantity">Book Quantity:</label>
+            <input type="text" id="quantity" name="quantity" required>
+            
+            <input type="submit" value="Add These Books">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="index.html">Back to Home Page</a>
+    </div>
+</body>
+</html>

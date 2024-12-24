@@ -1,0 +1,141 @@
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Book Store</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url("Photo.jpg");
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #topmid {
+        border: 0px solid black;
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 0px;
+        padding-left: 30%;
+        font-style: oblique;
+        font-size: 38px;
+        background-color: rgba(255, 111, 97, 0.9);
+        padding: 20px;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    a:link {
+        color: green;
+        text-decoration: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 111, 97, 0.9);
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: 18px;
+    }
+
+    .navbar a:hover {
+        background-color: rgba(255, 144, 119, 0.9);
+        border-radius: 5px;
+    }
+
+    .tab {
+        background-color: rgba(255, 255, 255, 0.9);
+        margin: 20px auto;
+        width: 680px;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+        color: blue;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    th {
+        color: green;
+        font-size: 20px;
+    }
+
+    .home {
+        border: 1px black solid;
+        background-color: #ccffcc;
+        width: 200px;
+        color: blue;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 10px;
+        padding: 10px;
+        float: left;
+        clear: both;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .brown {
+        color: brown;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="topmid">
+        <h1>Welcome to Online Book Store</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">Login</a>
+        <a href="viewbook">Books Available</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="tab">
+        <h2>Book Store Catalog</h2>
+        <p>Explore our range of books available online</p>
+    </div>
+
+</body>
+</html>
